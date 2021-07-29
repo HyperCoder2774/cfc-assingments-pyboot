@@ -4,4 +4,7 @@ def gcd(a, b):
     return gcd(b, a % b)
 a = int(input())
 b = int(input())
-print(gcd(a, b))
+if(gcd(a, b)<0):
+    print(-1*(gcd(a, b)))
+else:
+    print(gcd(a, b))
